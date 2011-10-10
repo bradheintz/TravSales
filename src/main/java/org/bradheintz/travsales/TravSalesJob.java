@@ -32,9 +32,9 @@ public class TravSalesJob extends Configured {
     private static String popPath = "travsales_populations";
     private static int numCities = 20;
     private static int populationSize = 100000;
-    private static int selectionBinSize = 10000; // TODO this doesn't match numberOfSelectionBins (which is a better param)
+    private static int selectionBinSize = 10000; // TODO this doesn't match numberOfSelectionBins - make it so
     private static float topTierToSave = 0.1f; // TODO
-    private static float survivorProportion = 0.5f;
+    private static float survivorProportion = 0.3f;
     private static float mutationChance = 0.01f;
     // LATER have pluggable strategies, but for now, just pick a number of generations
     private static int generations = 500;

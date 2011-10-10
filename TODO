@@ -2,4 +2,10 @@ TODO
 - improve test coverage
 - stub out Randoms and really test boundaries of functions using random #s
 - increase robustness under crap inputs (e.g. selection bin size of 1)
-- make a README.markdown
+- make an option to save the top (fittest) slice of a population
+- profile - get an idea at what point performance no longer bounded by Hadoop overhead
+- profile - look for bottlenecks, optimize
+- look at more compact serialization for chromosomes
+- generalize
+- pluggable strategies for selection & reproduction
+

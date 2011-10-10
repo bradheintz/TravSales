@@ -36,7 +36,8 @@ public class ScoringMapper extends Mapper<LongWritable, Text, Text, DoubleWritab
             try {
                 score = Double.parseDouble(scoreString);
             } catch(NumberFormatException nfe) {
-                // no-op - just go ahead and score it
+                // weird - but let's try re-generating the score
+                score = scorer.score(value.toString());
             }
         } else { // we only go through the scoring process if we don't have a map
             score = scorer.score(value.toString());

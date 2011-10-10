@@ -94,14 +94,12 @@ public class SelectionReproductionReducer extends Reducer<VIntWritable, Text, Te
 
         // TODO just use survivors for newPopulation - why not?  avoid dupes, save making another collection
         ArrayList<ScoredChromosome> parentPool = new ArrayList<ScoredChromosome>(survivors);
-        ArrayList<ScoredChromosome> newPopulation = new ArrayList<ScoredChromosome>(desiredPopulationSize);
-        newPopulation.addAll(survivors);
 
-        while (newPopulation.size() < desiredPopulationSize) {
-            newPopulation.add(makeOffspring(parentPool));
+        while (survivors.size() < desiredPopulationSize) {
+            survivors.add(makeOffspring(parentPool));
         }
 
-        Iterator<ScoredChromosome> iter = newPopulation.iterator();
+        Iterator<ScoredChromosome> iter = survivors.iterator();
         while (iter.hasNext()) {
             ScoredChromosome sc = iter.next();
             outKey.set(sc.chromosome);
