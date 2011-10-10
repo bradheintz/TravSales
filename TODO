@@ -2,3 +2,4 @@ TODO
 - improve test coverage
 - stub out Randoms and really test boundaries of functions using random #s
 - increase robustness under crap inputs (e.g. selection bin size of 1)
+- make a README.markdown
