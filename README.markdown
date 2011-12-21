@@ -1,7 +1,7 @@
 TravSales
 =========
 
-A parallelized genetic algorithm attack on the Traveling Salesman problem.
+A parallelized genetic algorithm attack on the Traveling Salesman problem. See [my related blog post](http://www.kickasslabs.com/2011/10/10/traveling-salesman-attack/ "Traveling Salesman Attack")
 
 License
 -------
